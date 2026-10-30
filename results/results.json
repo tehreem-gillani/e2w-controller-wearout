@@ -1,0 +1,2988 @@
+{
+ "weather": {
+  "Karachi": {
+   "mean": 26.339542237442924,
+   "p99": 35.9841,
+   "max": 40.41,
+   "hours_above_35": 173
+  },
+  "Delhi": {
+   "mean": 24.840075342465752,
+   "p99": 42.5423,
+   "max": 45.86,
+   "hours_above_35": 956
+  },
+  "Jakarta": {
+   "mean": 27.634616438356165,
+   "p99": 30.92,
+   "max": 31.95,
+   "hours_above_35": 0
+  },
+  "Lagos": {
+   "mean": 26.766906392694064,
+   "p99": 30.614099999999997,
+   "max": 32.15,
+   "hours_above_35": 0
+  },
+  "Madrid": {
+   "mean": 14.445614155251143,
+   "p99": 37.134100000000004,
+   "max": 40.57,
+   "hours_above_35": 212
+  }
+ },
+ "assumptions": {
+  "vehicle": {
+   "m_ref_kg": 177.0,
+   "ke_Vs_per_rad": 0.40020469036690903,
+   "i_lim_A": 100.0,
+   "p_lim_W": 3000.0,
+   "v_dc": 72.0
+  },
+  "controller": {
+   "n_par": 3,
+   "f_sw": 15000.0,
+   "sw_scale": 2.0,
+   "r_hs": 0.5,
+   "c_hs": 450.0
+  },
+  "life_model": {
+   "anchor": [
+    8572.0,
+    100.0,
+    75.0
+   ],
+   "n": 5.0,
+   "Ea_eV": 0.617,
+   "dT_min": 2.0,
+   "hysteresis": 0.5
+  }
+ },
+ "A_base": {
+  "commuter/Karachi": {
+   "tj_max": 47.348236083984375,
+   "tj_p99_riding": 41.80655288696289,
+   "tj_mean_riding": 33.07302474975586,
+   "rise_mean_riding": 6.536211967468262,
+   "riding_hours_tj_above_100": 0.0,
+   "th_max": 43.48872756958008,
+   "riding_hours_th_above_80": 0.0,
+   "D_index_base": 1.8413139950280584e-07,
+   "D_active_base": 9.911165571051502e-08,
+   "D_index_n3": 1.8329962952707248e-05,
+   "D_index_n4": 1.6025652147483794e-06,
+   "D_index_n6": 2.4783973675603094e-08,
+   "km_per_day": 24.043948575694913,
+   "n_cycles_ge2K": 20880
+  },
+  "commuter/Delhi": {
+   "tj_max": 55.448944091796875,
+   "tj_p99_riding": 49.04106521606445,
+   "tj_mean_riding": 31.5396671295166,
+   "rise_mean_riding": 6.493884086608887,
+   "riding_hours_tj_above_100": 0.0,
+   "th_max": 51.423561096191406,
+   "riding_hours_th_above_80": 0.0,
+   "D_index_base": 3.4354350237466757e-07,
+   "D_active_base": 1.1286340192067895e-07,
+   "D_index_n3": 2.2034214818651473e-05,
+   "D_index_n4": 2.354682649177232e-06,
+   "D_index_n6": 5.8623504060639906e-08,
+   "km_per_day": 24.043948575694913,
+   "n_cycles_ge2K": 20889
+  },
+  "commuter/Jakarta": {
+   "tj_max": 41.43142318725586,
+   "tj_p99_riding": 38.98432540893555,
+   "tj_mean_riding": 34.40854263305664,
+   "rise_mean_riding": 6.566651344299316,
+   "riding_hours_tj_above_100": 0.0,
+   "th_max": 37.69426727294922,
+   "riding_hours_th_above_80": 0.0,
+   "D_index_base": 1.19450298943005e-07,
+   "D_active_base": 1.0019722232108081e-07,
+   "D_index_n3": 1.732648196065572e-05,
+   "D_index_n4": 1.292437067107434e-06,
+   "D_index_n6": 1.2550304878841664e-08,
+   "km_per_day": 24.043948575694913,
+   "n_cycles_ge2K": 20675
+  },
+  "commuter/Lagos": {
+   "tj_max": 42.117156982421875,
+   "tj_p99_riding": 38.95192337036133,
+   "tj_mean_riding": 33.50831985473633,
+   "rise_mean_riding": 6.547815799713135,
+   "riding_hours_tj_above_100": 0.0,
+   "th_max": 38.3657341003418,
+   "riding_hours_th_above_80": 0.0,
+   "D_index_base": 1.2595699145231693e-07,
+   "D_active_base": 9.251774794255853e-08,
+   "D_index_n3": 1.6593195750562405e-05,
+   "D_index_n4": 1.2893150097253662e-06,
+   "D_index_n6": 1.4085854179213472e-08,
+   "km_per_day": 24.043948575694913,
+   "n_cycles_ge2K": 20659
+  },
+  "commuter/Madrid": {
+   "tj_max": 51.99610137939453,
+   "tj_p99_riding": 45.721797943115234,
+   "tj_mean_riding": 20.838857650756836,
+   "rise_mean_riding": 6.263137340545654,
+   "riding_hours_tj_above_100": 0.0,
+   "th_max": 48.0421257019043,
+   "riding_hours_th_above_80": 0.0,
+   "D_index_base": 5.886852018853648e-07,
+   "D_active_base": 4.701020601644334e-08,
+   "D_index_n3": 1.472385523855347e-05,
+   "D_index_n4": 2.511792963059148e-06,
+   "D_index_n6": 1.5328504972329997e-07,
+   "km_per_day": 24.043948575694913,
+   "n_cycles_ge2K": 20740
+  },
+  "delivery/Karachi": {
+   "tj_max": 52.45410919189453,
+   "tj_p99_riding": 44.39438247680664,
+   "tj_mean_riding": 34.573726654052734,
+   "rise_mean_riding": 6.18704080581665,
+   "riding_hours_tj_above_100": 0.0,
+   "th_max": 48.491249084472656,
+   "riding_hours_th_above_80": 0.0,
+   "D_index_base": 1.0187247903190786e-06,
+   "D_active_base": 6.891698927045764e-07,
+   "D_index_n3": 0.00010237054439671626,
+   "D_index_n4": 9.022094838770066e-06,
+   "D_index_n6": 1.3584538210852315e-07,
+   "km_per_day": 96.17579430277964,
+   "n_cycles_ge2K": 96360
+  },
+  "delivery/Delhi": {
+   "tj_max": 58.20223617553711,
+   "tj_p99_riding": 51.179256439208984,
+   "tj_mean_riding": 34.41797637939453,
+   "rise_mean_riding": 6.201587677001953,
+   "riding_hours_tj_above_100": 0.0,
+   "th_max": 54.121437072753906,
+   "riding_hours_th_above_80": 0.0,
+   "D_index_base": 1.5853648102152723e-06,
+   "D_active_base": 8.215981882182007e-07,
+   "D_index_n3": 0.0001217932144345198,
+   "D_index_n4": 1.1859774489754806e-05,
+   "D_index_n6": 2.656088158180613e-07,
+   "km_per_day": 96.17579430277964,
+   "n_cycles_ge2K": 96360
+  },
+  "delivery/Jakarta": {
+   "tj_max": 43.43947219848633,
+   "tj_p99_riding": 40.12609100341797,
+   "tj_mean_riding": 34.52553939819336,
+   "rise_mean_riding": 6.173326015472412,
+   "riding_hours_tj_above_100": 0.0,
+   "th_max": 39.661678314208984,
+   "riding_hours_th_above_80": 0.0,
+   "D_index_base": 7.424683709931128e-07,
+   "D_active_base": 6.346819052742576e-07,
+   "D_index_n3": 9.26521638670346e-05,
+   "D_index_n4": 7.542137709064354e-06,
+   "D_index_n6": 8.084227970853669e-08,
+   "km_per_day": 96.17579430277964,
+   "n_cycles_ge2K": 96360
+  },
+  "delivery/Lagos": {
+   "tj_max": 43.65646743774414,
+   "tj_p99_riding": 39.79792404174805,
+   "tj_mean_riding": 33.855255126953125,
+   "rise_mean_riding": 6.154740333557129,
+   "riding_hours_tj_above_100": 0.0,
+   "th_max": 39.874210357666016,
+   "riding_hours_th_above_80": 0.0,
+   "D_index_base": 7.073332611723439e-07,
+   "D_active_base": 5.970443662181088e-07,
+   "D_index_n3": 8.779108840493324e-05,
+   "D_index_n4": 7.158070468099063e-06,
+   "D_index_n6": 7.745360914087162e-08,
+   "km_per_day": 96.17579430277964,
+   "n_cycles_ge2K": 96360
+  },
+  "delivery/Madrid": {
+   "tj_max": 52.60038375854492,
+   "tj_p99_riding": 45.45187759399414,
+   "tj_mean_riding": 23.96648597717285,
+   "rise_mean_riding": 5.933560848236084,
+   "riding_hours_tj_above_100": 0.0,
+   "th_max": 48.63457107543945,
+   "riding_hours_th_above_80": 0.0,
+   "D_index_base": 7.834832249819411e-07,
+   "D_active_base": 3.7020717826222373e-07,
+   "D_index_n3": 5.8923665943093284e-05,
+   "D_index_n4": 5.810762565115264e-06,
+   "D_index_n6": 1.2845023117433005e-07,
+   "km_per_day": 96.17579430277964,
+   "n_cycles_ge2K": 96360
+  }
+ },
+ "B_life_model": {
+  "commuter": [
+   {
+    "n": 3.0,
+    "Ea": 0.0,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.7407061285072796,
+     "Delhi": 0.8455922739185335,
+     "Jakarta": 0.6533972256441181,
+     "Lagos": 0.669700957462426,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.1836640298398897,
+     "Delhi": 1.1763545640202788,
+     "Jakarta": 1.192695584074078,
+     "Lagos": 1.1787698490431338,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Jakarta",
+     "Karachi",
+     "Lagos",
+     "Delhi",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 3.0,
+    "Ea": 0.0,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.7381410877931582,
+     "Delhi": 0.843792145522365,
+     "Jakarta": 0.6500857132730814,
+     "Lagos": 0.6666468923895004,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.184312725067691,
+     "Delhi": 1.1770385376451722,
+     "Jakarta": 1.193229329859146,
+     "Lagos": 1.1792980372056188,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Jakarta",
+     "Karachi",
+     "Lagos",
+     "Delhi",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 3.0,
+    "Ea": 0.0,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.6345291251432637,
+     "Delhi": 0.7724130708066856,
+     "Jakarta": 0.5281723154960151,
+     "Lagos": 0.542130908592853,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.2541327223133427,
+     "Delhi": 1.2459987074059409,
+     "Jakarta": 1.2829525096515013,
+     "Lagos": 1.2384793313417282,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Jakarta",
+     "Karachi",
+     "Delhi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 3.0,
+    "Ea": 0.3,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.013059228731699,
+     "Delhi": 1.1469615911095645,
+     "Jakarta": 0.9366373556755545,
+     "Lagos": 0.9276314868186687,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Madrid",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.6781218363390242,
+     "Delhi": 1.6700479026512374,
+     "Jakarta": 1.7407422201651017,
+     "Lagos": 1.6668046927937854,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Jakarta",
+     "Karachi",
+     "Delhi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 3.0,
+    "Ea": 0.3,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.00925058383338,
+     "Delhi": 1.1441156317721006,
+     "Jakarta": 0.9318354199033481,
+     "Lagos": 0.9232934959950991,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Madrid",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.6787241069471868,
+     "Delhi": 1.6708199811905349,
+     "Jakarta": 1.7411862921868693,
+     "Lagos": 1.6672268148626208,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Jakarta",
+     "Karachi",
+     "Delhi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 3.0,
+    "Ea": 0.3,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.8484635806287576,
+     "Delhi": 1.030511599009421,
+     "Jakarta": 0.7423410578067208,
+     "Lagos": 0.7353057553788299,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Madrid",
+     "Karachi",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.754449027153457,
+     "Delhi": 1.7666531487331087,
+     "Jakarta": 1.8378750585889732,
+     "Lagos": 1.718550018000446,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Jakarta",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 3.0,
+    "Ea": 0.617,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.2495213617612149,
+     "Delhi": 1.5002005948899415,
+     "Jakarta": 1.1824710353197498,
+     "Lagos": 1.1319807482096684,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 2.0229738493414566,
+     "Delhi": 2.155391294141402,
+     "Jakarta": 2.11049668331712,
+     "Lagos": 1.9591656621757099,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Jakarta",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 3.0,
+    "Ea": 0.617,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.2449159989505614,
+     "Delhi": 1.4964976537501058,
+     "Jakarta": 1.1767625856091983,
+     "Lagos": 1.1269599898750828,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 2.023351896823777,
+     "Delhi": 2.1561261032780568,
+     "Jakarta": 2.1106804319800574,
+     "Lagos": 1.9593259428692242,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Jakarta",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 3.0,
+    "Ea": 0.617,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.0372150011404688,
+     "Delhi": 1.3441249396110189,
+     "Jakarta": 0.931842665841931,
+     "Lagos": 0.890782295783115,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Madrid",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 2.0738902700794175,
+     "Delhi": 2.2606168981471932,
+     "Jakarta": 2.1739177914756755,
+     "Lagos": 1.9703462167243433,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Jakarta",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 4.0,
+    "Ea": 0.0,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.42455512639453336,
+     "Delhi": 0.5823388273567165,
+     "Jakarta": 0.31038315303485337,
+     "Lagos": 0.3321233699695597,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.2535997395556928,
+     "Delhi": 1.2643558394059977,
+     "Jakarta": 1.2494802598324115,
+     "Lagos": 1.2313643197920456,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 4.0,
+    "Ea": 0.0,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.4241176231719029,
+     "Delhi": 0.582002870277811,
+     "Jakarta": 0.30986199049371843,
+     "Lagos": 0.3316331563063568,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.253801154455138,
+     "Delhi": 1.2646206740530184,
+     "Jakarta": 1.2496109050261923,
+     "Lagos": 1.231494170140539,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 4.0,
+    "Ea": 0.0,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.3857583533028771,
+     "Delhi": 0.5525798154549579,
+     "Jakarta": 0.2668686514415465,
+     "Lagos": 0.28796112350082637,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.2922286264334961,
+     "Delhi": 1.3088626206389593,
+     "Jakarta": 1.2935515475255315,
+     "Lagos": 1.2593755164500733,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Jakarta",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 4.0,
+    "Ea": 0.3,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.5376331261930437,
+     "Delhi": 0.7378364421844597,
+     "Jakarta": 0.4177928350336133,
+     "Lagos": 0.43161883469095685,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.7439352719118242,
+     "Delhi": 1.775373768006618,
+     "Jakarta": 1.7872860909419102,
+     "Lagos": 1.7065080286585927,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Jakarta",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 4.0,
+    "Ea": 0.3,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.5370286859365379,
+     "Delhi": 0.7373485092718357,
+     "Jakarta": 0.4170785106063396,
+     "Lagos": 0.4309629891696484,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.7441300195697562,
+     "Delhi": 1.7756901749238907,
+     "Jakarta": 1.7873880280302172,
+     "Lagos": 1.7066053150386786,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Jakarta",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 4.0,
+    "Ea": 0.3,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.4820670548697482,
+     "Delhi": 0.6941387840190869,
+     "Jakarta": 0.35497379574560683,
+     "Lagos": 0.369717081311498,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.7863675989051142,
+     "Delhi": 1.83711660339976,
+     "Jakarta": 1.8344022893810015,
+     "Lagos": 1.729852577410341,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Jakarta",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 4.0,
+    "Ea": 0.617,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.6387610817352,
+     "Delhi": 0.9381003446754749,
+     "Jakarta": 0.5154177492704286,
+     "Lagos": 0.5140818400602346,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 2.063022034820395,
+     "Delhi": 2.2639053047235635,
+     "Jakarta": 2.1243948707413436,
+     "Lagos": 1.9664056950260564,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Jakarta",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 4.0,
+    "Ea": 0.617,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.6380164441565249,
+     "Delhi": 0.93745092999601,
+     "Jakarta": 0.5145476104580518,
+     "Lagos": 0.5133046507762691,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 2.063159174757815,
+     "Delhi": 2.2642371523656735,
+     "Jakarta": 2.1244262110891303,
+     "Lagos": 1.9664321555035664,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Jakarta",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 4.0,
+    "Ea": 0.617,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.567219670284641,
+     "Delhi": 0.8786196648291524,
+     "Jakarta": 0.4344147378724549,
+     "Lagos": 0.43665733981745947,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 2.0935276630101867,
+     "Delhi": 2.3336662958835466,
+     "Jakarta": 2.155140072569737,
+     "Lagos": 1.9696430903567004,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Jakarta",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 5.0,
+    "Ea": 0.0,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.23242053821655145,
+     "Delhi": 0.39367514757600663,
+     "Jakarta": 0.13296483833529318,
+     "Lagos": 0.15034480483287407,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.3262931812645324,
+     "Delhi": 1.3690637257954223,
+     "Jakarta": 1.2997110974653672,
+     "Lagos": 1.2777389406906365,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 5.0,
+    "Ea": 0.0,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.23238084229816888,
+     "Delhi": 0.39364274658547216,
+     "Jakarta": 0.1329198195877725,
+     "Lagos": 0.1503020942938253,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.326341421612388,
+     "Delhi": 1.3691393939198098,
+     "Jakarta": 1.2997334610607099,
+     "Lagos": 1.2777617606940705,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 5.0,
+    "Ea": 0.0,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.22399824523177353,
+     "Delhi": 0.3867770419916939,
+     "Jakarta": 0.12395481772045391,
+     "Lagos": 0.1410862522250728,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.3461572396441315,
+     "Delhi": 1.3951746219314036,
+     "Jakarta": 1.3198556217116866,
+     "Lagos": 1.2898986454002503,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 5.0,
+    "Ea": 0.3,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.27534570260210356,
+     "Delhi": 0.4729205677382453,
+     "Jakarta": 0.1697023845634564,
+     "Lagos": 0.18531923101036507,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.8125598720514744,
+     "Delhi": 1.9026928458062313,
+     "Jakarta": 1.8248948461756165,
+     "Lagos": 1.738193326583219,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Jakarta",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 5.0,
+    "Ea": 0.3,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.27529403634245375,
+     "Delhi": 0.472876424129095,
+     "Jakarta": 0.1696437536483433,
+     "Lagos": 0.18526502647099063,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.812608944662088,
+     "Delhi": 1.9027870182382485,
+     "Jakarta": 1.8249107136143532,
+     "Lagos": 1.7382091367268444,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Jakarta",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 5.0,
+    "Ea": 0.3,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.2640131116321865,
+     "Delhi": 0.46344155145697064,
+     "Jakarta": 0.15738446939399034,
+     "Lagos": 0.17304396782537276,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.8345845865398085,
+     "Delhi": 1.9388929439276061,
+     "Jakarta": 1.8460985644832464,
+     "Lagos": 1.7477233283887954,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Jakarta",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 5.0,
+    "Ea": 0.617,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.31284705405328594,
+     "Delhi": 0.5836359748310901,
+     "Jakarta": 0.20298108168224605,
+     "Lagos": 0.21402687582213803,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 2.108261372427335,
+     "Delhi": 2.4007221524052094,
+     "Jakarta": 2.131390098106277,
+     "Lagos": 1.9680326188306994,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Jakarta",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 5.0,
+    "Ea": 0.617,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.31278414832425483,
+     "Delhi": 0.5835776086682847,
+     "Jakarta": 0.20291031362848097,
+     "Lagos": 0.2139632371408661,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 2.1083008161216634,
+     "Delhi": 2.40082763902803,
+     "Jakarta": 2.131392963605256,
+     "Lagos": 1.9680353647077713,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Jakarta",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 5.0,
+    "Ea": 0.617,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.2985299549436299,
+     "Delhi": 0.5709019127171158,
+     "Jakarta": 0.18734647818446154,
+     "Lagos": 0.1989284317652079,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 2.1251171208044917,
+     "Delhi": 2.4426926206059982,
+     "Jakarta": 2.145064433649575,
+     "Lagos": 1.968249687150645,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Jakarta",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 6.0,
+    "Ea": 0.0,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.13100315538117047,
+     "Delhi": 0.2729849963927124,
+     "Jakarta": 0.05706973973102633,
+     "Lagos": 0.0685704438255651,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.40030787357182,
+     "Delhi": 1.4862685277615446,
+     "Jakarta": 1.3453345324560155,
+     "Lagos": 1.3196651458065285,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 6.0,
+    "Ea": 0.0,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.13100026018495914,
+     "Delhi": 0.2729825230494802,
+     "Jakarta": 0.05706656157880903,
+     "Lagos": 0.06856741969920853,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.4003178128914058,
+     "Delhi": 1.4862863623450615,
+     "Jakarta": 1.3453375947267656,
+     "Lagos": 1.3196684318516965,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 6.0,
+    "Ea": 0.0,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.12949252813721604,
+     "Delhi": 0.2716864696361526,
+     "Jakarta": 0.055513940344677826,
+     "Lagos": 0.06694831260359818,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.4100327905426648,
+     "Delhi": 1.5004127864816137,
+     "Jakarta": 1.3542547992024772,
+     "Lagos": 1.3247493289211107,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 6.0,
+    "Ea": 0.3,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.14770412816057749,
+     "Delhi": 0.31660150062689413,
+     "Jakarta": 0.07017511274334937,
+     "Lagos": 0.08150296726574498,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.8813751843353292,
+     "Delhi": 2.04569511607609,
+     "Jakarta": 1.8552245610046143,
+     "Lagos": 1.763330808216943,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 6.0,
+    "Ea": 0.3,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.1477005091251431,
+     "Delhi": 0.31659826902997623,
+     "Jakarta": 0.07017111662805557,
+     "Lagos": 0.08149926480674335,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.881385694927625,
+     "Delhi": 2.045717890905618,
+     "Jakarta": 1.8552263262059052,
+     "Lagos": 1.763332774702696,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 6.0,
+    "Ea": 0.3,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.14575824720351857,
+     "Delhi": 0.314900231082566,
+     "Jakarta": 0.06812448080053501,
+     "Lagos": 0.07943173752043348,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.8921468959172822,
+     "Delhi": 2.06521250008581,
+     "Jakarta": 1.8643632417514562,
+     "Lagos": 1.766965594898672,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 6.0,
+    "Ea": 0.617,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.16168986317182302,
+     "Delhi": 0.3824518586939068,
+     "Jakarta": 0.08188035097623603,
+     "Lagos": 0.09189748845776904,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 2.1542374396609656,
+     "Delhi": 2.5567088202315422,
+     "Jakarta": 2.131344268526991,
+     "Lagos": 1.963906754255581,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 6.0,
+    "Ea": 0.617,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.1616855245853492,
+     "Delhi": 0.3824476305188482,
+     "Jakarta": 0.08187559648835059,
+     "Lagos": 0.09189320292253109,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 2.1542466880535502,
+     "Delhi": 2.5567353407922577,
+     "Jakarta": 2.131344003185537,
+     "Lagos": 1.9639066916098167,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 6.0,
+    "Ea": 0.617,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.1592786993221564,
+     "Delhi": 0.3802041201937709,
+     "Jakarta": 0.07931936183983634,
+     "Lagos": 0.08939247135584953,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Madrid",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 2.1627718893701835,
+     "Delhi": 2.579604502533995,
+     "Jakarta": 2.1370338131728137,
+     "Lagos": 1.9633289287860478,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   }
+  ],
+  "delivery": [
+   {
+    "n": 3.0,
+    "Ea": 0.0,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.0791553792268764,
+     "Delhi": 1.1475883648982683,
+     "Jakarta": 1.0293833624617672,
+     "Lagos": 1.0225005764640185,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.1479149454976594,
+     "Delhi": 1.1558466414590922,
+     "Jakarta": 1.1422425963015237,
+     "Lagos": 1.1311885043220993,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 3.0,
+    "Ea": 0.0,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.0788104117773885,
+     "Delhi": 1.1478270861772029,
+     "Jakarta": 1.028602655808799,
+     "Lagos": 1.021747483884046,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.1482294602643779,
+     "Delhi": 1.1562136188055463,
+     "Jakarta": 1.1425067838401437,
+     "Lagos": 1.1314414687721646,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 3.0,
+    "Ea": 0.0,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.0766892493639908,
+     "Delhi": 1.1744054749432085,
+     "Jakarta": 1.0228634878236103,
+     "Lagos": 1.0088491921935094,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.184941467917292,
+     "Delhi": 1.1948507370346424,
+     "Jakarta": 1.1998657199575433,
+     "Lagos": 1.1772853064995843,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Jakarta",
+     "Delhi",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 3.0,
+    "Ea": 0.3,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.4527092544388915,
+     "Delhi": 1.5881870849815738,
+     "Jakarta": 1.3652585578261063,
+     "Lagos": 1.3243284854607513,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.5459482082972302,
+     "Delhi": 1.6173348903104237,
+     "Jakarta": 1.5098289453137579,
+     "Lagos": 1.460542489468214,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 3.0,
+    "Ea": 0.3,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.4521147417407079,
+     "Delhi": 1.5882532298748049,
+     "Jakarta": 1.364159717770084,
+     "Lagos": 1.3232878499901666,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.5461929266719656,
+     "Delhi": 1.6177051008516992,
+     "Jakarta": 1.5100020627515625,
+     "Lagos": 1.4606994113389467,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 3.0,
+    "Ea": 0.3,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.4388674866209024,
+     "Delhi": 1.6160662601155005,
+     "Jakarta": 1.345450703784793,
+     "Lagos": 1.2963374758755555,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.582649413297629,
+     "Delhi": 1.6693568016903741,
+     "Jakarta": 1.568818323683836,
+     "Lagos": 1.5043778913674024,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 3.0,
+    "Ea": 0.617,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.7381177060477067,
+     "Delhi": 2.0670992316827212,
+     "Jakarta": 1.5736636184669772,
+     "Lagos": 1.4910755390640893,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.8422010213528233,
+     "Delhi": 2.1173338952930956,
+     "Jakarta": 1.7255475365244342,
+     "Lagos": 1.630978656965673,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 3.0,
+    "Ea": 0.617,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.737341741357075,
+     "Delhi": 2.0669660056817247,
+     "Jakarta": 1.5724100390582503,
+     "Lagos": 1.4899121940192799,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.842315427547119,
+     "Delhi": 2.117666536797144,
+     "Jakarta": 1.7255750731316561,
+     "Lagos": 1.6309940762104858,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 3.0,
+    "Ea": 0.617,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.7099744408875241,
+     "Delhi": 2.0949535372867,
+     "Jakarta": 1.5393101150642223,
+     "Lagos": 1.4492465929840834,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.8674293382078906,
+     "Delhi": 2.1806355076783417,
+     "Jakarta": 1.770646583610941,
+     "Lagos": 1.6599536070049796,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 4.0,
+    "Ea": 0.0,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.9985883764360816,
+     "Delhi": 1.1977595269211148,
+     "Jakarta": 0.8761813679386359,
+     "Lagos": 0.8717708919246505,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Madrid",
+     "Karachi",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.1893960548929807,
+     "Delhi": 1.2041163835151394,
+     "Jakarta": 1.1799546589578815,
+     "Lagos": 1.1652438678209969,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 4.0,
+    "Ea": 0.0,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.9983848435131355,
+     "Delhi": 1.197810326968708,
+     "Jakarta": 0.8758203444494362,
+     "Lagos": 0.8714204432609882,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Madrid",
+     "Karachi",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.189466647414255,
+     "Delhi": 1.2042053528505756,
+     "Jakarta": 1.1800114001415123,
+     "Lagos": 1.1652961777782667,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 4.0,
+    "Ea": 0.0,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.9835467461947459,
+     "Delhi": 1.2081192211936183,
+     "Jakarta": 0.8524790306057519,
+     "Lagos": 0.8458543705663177,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Madrid",
+     "Karachi",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.205834237639067,
+     "Delhi": 1.2221559625103249,
+     "Jakarta": 1.2065187132284505,
+     "Lagos": 1.1860467294307175,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Jakarta",
+     "Karachi",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 4.0,
+    "Ea": 0.3,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.3156653347335605,
+     "Delhi": 1.6053508674478378,
+     "Jakarta": 1.1392014056775381,
+     "Lagos": 1.1068839215556483,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.5776201624421677,
+     "Delhi": 1.6699701857225806,
+     "Jakarta": 1.5322773475479463,
+     "Lagos": 1.478361106551016,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 4.0,
+    "Ea": 0.3,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.315361892231475,
+     "Delhi": 1.605327257538049,
+     "Jakarta": 1.1387151602769723,
+     "Lagos": 1.1064218357892432,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.5776698058838377,
+     "Delhi": 1.6700589444005594,
+     "Jakarta": 1.532305680066539,
+     "Lagos": 1.4783840619441286,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 4.0,
+    "Ea": 0.3,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.2904227550093628,
+     "Delhi": 1.6116835480366059,
+     "Jakarta": 1.1032438656231685,
+     "Lagos": 1.0691607594002208,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.5933357804903283,
+     "Delhi": 1.6939103873348806,
+     "Jakarta": 1.5589268135490744,
+     "Lagos": 1.4975694462051405,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 4.0,
+    "Ea": 0.617,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.553027846436553,
+     "Delhi": 2.041111982826906,
+     "Jakarta": 1.2985113189091275,
+     "Lagos": 1.2323767307889588,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.8544600320422018,
+     "Delhi": 2.1695250076828154,
+     "Jakarta": 1.723057796079417,
+     "Lagos": 1.6246599402301634,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 4.0,
+    "Ea": 0.617,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.5526524681861786,
+     "Delhi": 2.0410013929935116,
+     "Jakarta": 1.297960056799317,
+     "Lagos": 1.231864215390992,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.8544742610667897,
+     "Delhi": 2.1696032400533274,
+     "Jakarta": 1.7230448163711387,
+     "Lagos": 1.6246433433818226,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 4.0,
+    "Ea": 0.617,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.517986505249038,
+     "Delhi": 2.0421462266832746,
+     "Jakarta": 1.252856748307981,
+     "Lagos": 1.1861521887703346,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.8644694025528077,
+     "Delhi": 2.1987153606954393,
+     "Jakarta": 1.742931197421495,
+     "Lagos": 1.63671509978874,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 5.0,
+    "Ea": 0.0,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.8725046933908183,
+     "Delhi": 1.2796181354657186,
+     "Jakarta": 0.6635272798674207,
+     "Lagos": 0.6627020110259717,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Madrid",
+     "Karachi",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.2279168072424902,
+     "Delhi": 1.2518430733841523,
+     "Jakarta": 1.2134327660474458,
+     "Lagos": 1.1950490028540919,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 5.0,
+    "Ea": 0.0,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.8724560082248208,
+     "Delhi": 1.2796300071966606,
+     "Jakarta": 0.6634474341993843,
+     "Lagos": 0.6626244278324392,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Madrid",
+     "Karachi",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.2279284491923415,
+     "Delhi": 1.2518596633945709,
+     "Jakarta": 1.2134409771995196,
+     "Lagos": 1.1950563292336942,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 5.0,
+    "Ea": 0.0,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.8634153570282712,
+     "Delhi": 1.2842316407807965,
+     "Jakarta": 0.6498314830204845,
+     "Lagos": 0.6483803846804289,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Madrid",
+     "Karachi",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.235106420144727,
+     "Delhi": 1.2601029156693095,
+     "Jakarta": 1.2253874356855514,
+     "Lagos": 1.2042191327461975,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 5.0,
+    "Ea": 0.3,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.120026885047513,
+     "Delhi": 1.644008683186229,
+     "Jakarta": 0.8425807184796509,
+     "Lagos": 0.8218016980516215,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Madrid",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.6043862307009256,
+     "Delhi": 1.7207539053186982,
+     "Jakarta": 1.5483672237961819,
+     "Lagos": 1.4901136484354647,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 5.0,
+    "Ea": 0.3,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.119957615148072,
+     "Delhi": 1.6440046157922141,
+     "Jakarta": 0.8424760158304008,
+     "Lagos": 0.8217021605808348,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Madrid",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.60439296093125,
+     "Delhi": 1.7207699318245597,
+     "Jakarta": 1.5483688759638399,
+     "Lagos": 1.4901143593652404,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 5.0,
+    "Ea": 0.3,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.1060743294218236,
+     "Delhi": 1.6461219174784958,
+     "Jakarta": 0.8231792694174671,
+     "Lagos": 0.8021454594286176,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Madrid",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.610931863435918,
+     "Delhi": 1.731548843713969,
+     "Jakarta": 1.560002990881711,
+     "Lagos": 1.49823192645563,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 5.0,
+    "Ea": 0.617,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.3003356370869854,
+     "Delhi": 2.0235058119704186,
+     "Jakarta": 0.9477691881190168,
+     "Lagos": 0.9029161057497448,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Madrid",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.8615795005707636,
+     "Delhi": 2.2192793797493353,
+     "Jakarta": 1.714403314122143,
+     "Lagos": 1.6127376219202205,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 5.0,
+    "Ea": 0.617,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.3002509279538943,
+     "Delhi": 2.0234827749526025,
+     "Jakarta": 0.9476506290357734,
+     "Lagos": 0.9028058784393854,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Madrid",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.8615789567873429,
+     "Delhi": 2.219292970154807,
+     "Jakarta": 1.7143965394012488,
+     "Lagos": 1.6127303879429713,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 5.0,
+    "Ea": 0.617,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.2819095727776013,
+     "Delhi": 2.0224176429192453,
+     "Jakarta": 0.9240593702901244,
+     "Lagos": 0.8795976939075827,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Madrid",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.8653665976759264,
+     "Delhi": 2.2323695136510127,
+     "Jakarta": 1.7227931608406675,
+     "Lagos": 1.6174954670410477,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 6.0,
+    "Ea": 0.0,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.7418183063308242,
+     "Delhi": 1.4125606123935937,
+     "Jakarta": 0.4575794934692701,
+     "Lagos": 0.45963211435482054,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Madrid",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.2650920480521028,
+     "Delhi": 1.3008720701709766,
+     "Jakarta": 1.2440840420887573,
+     "Lagos": 1.221926520894097,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 6.0,
+    "Ea": 0.0,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.7418108624334805,
+     "Delhi": 1.4125631397060923,
+     "Jakarta": 0.45756782883349073,
+     "Lagos": 0.4596207737714377,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Madrid",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.265093750940822,
+     "Delhi": 1.3008749305463614,
+     "Jakarta": 1.244084966057784,
+     "Lagos": 1.2219272961625027,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 6.0,
+    "Ea": 0.0,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.7384195721844321,
+     "Delhi": 1.4145697316151584,
+     "Jakarta": 0.45263701566193326,
+     "Lagos": 0.45451158396242824,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Madrid",
+     "Karachi",
+     "Lagos",
+     "Jakarta"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.268266594053759,
+     "Delhi": 1.3046941855028793,
+     "Jakarta": 1.2494373260842577,
+     "Lagos": 1.2259576024115617,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 6.0,
+    "Ea": 0.3,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.927273941226206,
+     "Delhi": 1.7386280275155193,
+     "Jakarta": 0.567388451601888,
+     "Lagos": 0.5565595361574227,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Madrid",
+     "Karachi",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.628261752758549,
+     "Delhi": 1.7721503921816155,
+     "Jakarta": 1.5598966999781583,
+     "Lagos": 1.4974407529940397,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 6.0,
+    "Ea": 0.3,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.9272637017375625,
+     "Delhi": 1.7386282992618727,
+     "Jakarta": 0.5673735547207719,
+     "Lagos": 0.5565453692032339,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Madrid",
+     "Karachi",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.6282624355012296,
+     "Delhi": 1.7721530528252574,
+     "Jakarta": 1.559896289220679,
+     "Lagos": 1.4974402084248,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 6.0,
+    "Ea": 0.3,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 0.9222933293113269,
+     "Delhi": 1.7397416796939578,
+     "Jakarta": 0.5606624421606469,
+     "Lagos": 0.5497945968244607,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Madrid",
+     "Karachi",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.6310048205067147,
+     "Delhi": 1.7770430988530728,
+     "Jakarta": 1.5649284185652492,
+     "Lagos": 1.5008412952179269,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 6.0,
+    "Ea": 0.617,
+    "dT_min": 0.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.057584507840321,
+     "Delhi": 2.067797950398656,
+     "Jakarta": 0.6293833183635432,
+     "Lagos": 0.6030009500742481,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Madrid",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.8656962153171486,
+     "Delhi": 2.269696756176734,
+     "Jakarta": 1.701434034836017,
+     "Lagos": 1.5968289162498461,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 6.0,
+    "Ea": 0.617,
+    "dT_min": 2.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.057572110743472,
+     "Delhi": 2.0677955453235612,
+     "Jakarta": 0.6293665567547262,
+     "Lagos": 0.6029853619784705,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Madrid",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.8656955625291298,
+     "Delhi": 2.269698925657575,
+     "Jakarta": 1.7014321057945947,
+     "Lagos": 1.5968269611389416,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   },
+   {
+    "n": 6.0,
+    "Ea": 0.617,
+    "dT_min": 5.0,
+    "ratio_to_Madrid": {
+     "Karachi": 1.0511592094068054,
+     "Delhi": 2.067797560445128,
+     "Jakarta": 0.6213213019831375,
+     "Lagos": 0.5951207672588673,
+     "Madrid": 1.0
+    },
+    "order": [
+     "Delhi",
+     "Karachi",
+     "Madrid",
+     "Jakarta",
+     "Lagos"
+    ],
+    "active_ratio_to_Madrid": {
+     "Karachi": 1.867135501757858,
+     "Delhi": 2.2755749742846,
+     "Jakarta": 1.7049315647570122,
+     "Lagos": 1.5986737484496267,
+     "Madrid": 1.0
+    },
+    "active_order": [
+     "Delhi",
+     "Karachi",
+     "Jakarta",
+     "Lagos",
+     "Madrid"
+    ]
+   }
+  ]
+ },
+ "C_factors_delivery": {
+  "Delhi": [
+   {
+    "factor": "base",
+    "D_index_base": 1.5853648102152723e-06,
+    "tj_max": 58.20223617553711,
+    "th_max": 54.121437072753906,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "box to air R_hs 0.5 -> 1.5 K/W (no airflow)",
+    "D_index_base": 2.6984167111513786e-05,
+    "tj_max": 68.69898223876953,
+    "th_max": 64.52244567871094,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "12 instead of 18 MOSFETs",
+    "D_index_base": 1.4591593205365959e-05,
+    "tj_max": 65.02599334716797,
+    "th_max": 56.365482330322266,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "+8 K inside the scooter body",
+    "D_index_base": 3.3684133706567095e-06,
+    "tj_max": 66.74522399902344,
+    "th_max": 62.46023941040039,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "pillion / cargo +75 kg",
+    "D_index_base": 4.460177069170026e-06,
+    "tj_max": 61.50349807739258,
+    "th_max": 57.58537292480469,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "slower gate drive (x4 datasheet times)",
+    "D_index_base": 6.1859637005525075e-06,
+    "tj_max": 62.24212646484375,
+    "th_max": 56.97920608520508,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "R_DS(on) at datasheet max",
+    "D_index_base": 2.551831446485135e-06,
+    "tj_max": 59.63980484008789,
+    "th_max": 55.00823211669922,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "higher current limit 150 A, 4.5 kW",
+    "D_index_base": 9.158591119291005e-06,
+    "tj_max": 63.57511901855469,
+    "th_max": 55.07228088378906,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "regen braking (50 %)",
+    "D_index_base": 2.8563969683047606e-06,
+    "tj_max": 60.05699920654297,
+    "th_max": 55.92245864868164,
+    "riding_hours_th_above_80": 0.0
+   }
+  ],
+  "Karachi": [
+   {
+    "factor": "base",
+    "D_index_base": 1.0187247903190786e-06,
+    "tj_max": 52.45410919189453,
+    "th_max": 48.491249084472656,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "box to air R_hs 0.5 -> 1.5 K/W (no airflow)",
+    "D_index_base": 2.101903163441069e-05,
+    "tj_max": 62.64492416381836,
+    "th_max": 58.61775207519531,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "12 instead of 18 MOSFETs",
+    "D_index_base": 1.1064662163047764e-05,
+    "tj_max": 58.954280853271484,
+    "th_max": 50.62169647216797,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "+8 K inside the scooter body",
+    "D_index_base": 2.23287860160636e-06,
+    "tj_max": 60.942745208740234,
+    "th_max": 56.802207946777344,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "pillion / cargo +75 kg",
+    "D_index_base": 3.161466727836649e-06,
+    "tj_max": 55.64817810058594,
+    "th_max": 51.84919357299805,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "slower gate drive (x4 datasheet times)",
+    "D_index_base": 4.619210190949859e-06,
+    "tj_max": 56.48162841796875,
+    "th_max": 51.34587478637695,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "R_DS(on) at datasheet max",
+    "D_index_base": 1.7233781983924772e-06,
+    "tj_max": 53.83357238769531,
+    "th_max": 49.34214401245117,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "higher current limit 150 A, 4.5 kW",
+    "D_index_base": 6.79841299660003e-06,
+    "tj_max": 57.595314025878906,
+    "th_max": 49.39863967895508,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "regen braking (50 %)",
+    "D_index_base": 1.9558824810765494e-06,
+    "tj_max": 54.27046585083008,
+    "th_max": 50.25497055053711,
+    "riding_hours_th_above_80": 0.0
+   }
+  ],
+  "Madrid": [
+   {
+    "factor": "base",
+    "D_index_base": 7.834832249819411e-07,
+    "tj_max": 52.60038375854492,
+    "th_max": 48.63457107543945,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "box to air R_hs 0.5 -> 1.5 K/W (no airflow)",
+    "D_index_base": 1.2593504932006927e-05,
+    "tj_max": 62.7855339050293,
+    "th_max": 58.755455017089844,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "12 instead of 18 MOSFETs",
+    "D_index_base": 6.675906625147288e-06,
+    "tj_max": 59.10691452026367,
+    "th_max": 50.76735305786133,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "+8 K inside the scooter body",
+    "D_index_base": 1.6840691910425084e-06,
+    "tj_max": 61.08989334106445,
+    "th_max": 56.94574737548828,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "pillion / cargo +75 kg",
+    "D_index_base": 2.151071374111808e-06,
+    "tj_max": 55.796939849853516,
+    "th_max": 51.995201110839844,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "slower gate drive (x4 datasheet times)",
+    "D_index_base": 3.06769053279918e-06,
+    "tj_max": 56.627899169921875,
+    "th_max": 51.48919677734375,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "R_DS(on) at datasheet max",
+    "D_index_base": 1.2391145059723592e-06,
+    "tj_max": 53.98129653930664,
+    "th_max": 49.48635482788086,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "higher current limit 150 A, 4.5 kW",
+    "D_index_base": 4.2644552550841786e-06,
+    "tj_max": 57.746341705322266,
+    "th_max": 49.542842864990234,
+    "riding_hours_th_above_80": 0.0
+   },
+   {
+    "factor": "regen braking (50 %)",
+    "D_index_base": 1.4024452264839572e-06,
+    "tj_max": 54.417686462402344,
+    "th_max": 50.39921569824219,
+    "riding_hours_th_above_80": 0.0
+   }
+  ]
+ },
+ "D_hard": {
+  "settings": {
+   "r_hs": 1.5,
+   "n_par": 2,
+   "t_offset": 8.0,
+   "m_extra": 75.0
+  },
+  "results": {
+   "commuter/Karachi": {
+    "tj_max": 95.2726821899414,
+    "tj_p99_riding": 84.66790008544922,
+    "tj_mean_riding": 61.6277961730957,
+    "rise_mean_riding": 27.090988159179688,
+    "riding_hours_tj_above_100": 0.0,
+    "th_max": 85.25800323486328,
+    "riding_hours_th_above_80": 0.3422222222222222,
+    "D_index_base": 0.0008354980981658925,
+    "D_active_base": 0.0005384631283625631,
+    "D_index_n3": 0.004763275430565403,
+    "D_index_n4": 0.0017922218084055145,
+    "D_index_n6": 0.00041265045674626665,
+    "km_per_day": 23.361834747395495,
+    "n_cycles_ge2K": 30238
+   },
+   "commuter/Delhi": {
+    "tj_max": 106.0827407836914,
+    "tj_p99_riding": 90.59689331054688,
+    "tj_mean_riding": 59.89885711669922,
+    "rise_mean_riding": 26.85305404663086,
+    "riding_hours_tj_above_100": 0.0763888888888889,
+    "th_max": 95.39704132080078,
+    "riding_hours_th_above_80": 6.595,
+    "D_index_base": 0.0010145727034477116,
+    "D_active_base": 0.0006065394857376082,
+    "D_index_n3": 0.005196399922561736,
+    "D_index_n4": 0.0020554595538678157,
+    "D_index_n6": 0.0005337774871553872,
+    "km_per_day": 23.361834747395495,
+    "n_cycles_ge2K": 30250
+   },
+   "commuter/Jakarta": {
+    "tj_max": 87.5488510131836,
+    "tj_p99_riding": 82.72563171386719,
+    "tj_mean_riding": 63.13026428222656,
+    "rise_mean_riding": 27.288362503051758,
+    "riding_hours_tj_above_100": 0.0,
+    "th_max": 78.00666046142578,
+    "riding_hours_th_above_80": 0.0,
+    "D_index_base": 0.0008318027570196878,
+    "D_active_base": 0.0005644368082245465,
+    "D_index_n3": 0.004945377230913642,
+    "D_index_n4": 0.0018260438029444096,
+    "D_index_n6": 0.0004001639009946732,
+    "km_per_day": 23.361834747395495,
+    "n_cycles_ge2K": 30048
+   },
+   "commuter/Lagos": {
+    "tj_max": 88.42142486572266,
+    "tj_p99_riding": 81.97621154785156,
+    "tj_mean_riding": 62.10256576538086,
+    "rise_mean_riding": 27.14206314086914,
+    "riding_hours_tj_above_100": 0.0,
+    "th_max": 78.82569885253906,
+    "riding_hours_th_above_80": 0.0,
+    "D_index_base": 0.0007689404061973751,
+    "D_active_base": 0.0005143867188220392,
+    "D_index_n3": 0.0045786570616579685,
+    "D_index_n4": 0.0016883429105654742,
+    "D_index_n6": 0.0003701405173204606,
+    "km_per_day": 23.361834747395495,
+    "n_cycles_ge2K": 30048
+   },
+   "commuter/Madrid": {
+    "tj_max": 101.46550750732422,
+    "tj_p99_riding": 85.93242645263672,
+    "tj_mean_riding": 47.77095413208008,
+    "rise_mean_riding": 25.195247650146484,
+    "riding_hours_tj_above_100": 0.0019444444444444444,
+    "th_max": 91.07360076904297,
+    "riding_hours_th_above_80": 2.3441666666666667,
+    "D_index_base": 0.0005729178919628086,
+    "D_active_base": 0.00026207841880145815,
+    "D_index_n3": 0.0025246921313679437,
+    "D_index_n4": 0.0010673673502221157,
+    "D_index_n6": 0.0003317876056755433,
+    "km_per_day": 23.361834747395495,
+    "n_cycles_ge2K": 29373
+   },
+   "delivery/Karachi": {
+    "tj_max": 95.36548614501953,
+    "tj_p99_riding": 81.58563995361328,
+    "tj_mean_riding": 59.05478286743164,
+    "rise_mean_riding": 22.668109893798828,
+    "riding_hours_tj_above_100": 0.0,
+    "th_max": 85.43346405029297,
+    "riding_hours_th_above_80": 0.45361111111111113,
+    "D_index_base": 0.0027830867953290888,
+    "D_active_base": 0.0018552959132311416,
+    "D_index_n3": 0.019376699499368696,
+    "D_index_n4": 0.006788813526193505,
+    "D_index_n6": 0.0011923608091190508,
+    "km_per_day": 93.44733898958198,
+    "n_cycles_ge2K": 140176
+   },
+   "delivery/Delhi": {
+    "tj_max": 102.6924057006836,
+    "tj_p99_riding": 87.56559753417969,
+    "tj_mean_riding": 58.918827056884766,
+    "rise_mean_riding": 22.702478408813477,
+    "riding_hours_tj_above_100": 0.06166666666666667,
+    "th_max": 92.30791473388672,
+    "riding_hours_th_above_80": 13.512777777777778,
+    "D_index_base": 0.003472065793907884,
+    "D_active_base": 0.0022765595393232146,
+    "D_index_n3": 0.022624039587703676,
+    "D_index_n4": 0.008174399893461921,
+    "D_index_n6": 0.0015490276424542106,
+    "km_per_day": 93.44733898958198,
+    "n_cycles_ge2K": 140681
+   },
+   "delivery/Jakarta": {
+    "tj_max": 83.97734832763672,
+    "tj_p99_riding": 78.36480712890625,
+    "tj_mean_riding": 58.96491622924805,
+    "rise_mean_riding": 22.612712860107422,
+    "riding_hours_tj_above_100": 0.0,
+    "th_max": 74.73944091796875,
+    "riding_hours_th_above_80": 0.0,
+    "D_index_base": 0.0024876473593759777,
+    "D_active_base": 0.0016905150581890105,
+    "D_index_n3": 0.017985509155563385,
+    "D_index_n4": 0.006193588937313141,
+    "D_index_n6": 0.0010406125362654552,
+    "km_per_day": 93.44733898958198,
+    "n_cycles_ge2K": 140160
+   },
+   "delivery/Lagos": {
+    "tj_max": 84.25221252441406,
+    "tj_p99_riding": 77.8206787109375,
+    "tj_mean_riding": 58.21699905395508,
+    "rise_mean_riding": 22.516490936279297,
+    "riding_hours_tj_above_100": 0.0,
+    "th_max": 74.99742889404297,
+    "riding_hours_th_above_80": 0.0,
+    "D_index_base": 0.002330328211157889,
+    "D_active_base": 0.0015819462892168515,
+    "D_index_n3": 0.01696415552086136,
+    "D_index_n4": 0.005821273037211384,
+    "D_index_n6": 0.0009717436622361361,
+    "km_per_day": 93.44733898958198,
+    "n_cycles_ge2K": 140160
+   },
+   "delivery/Madrid": {
+    "tj_max": 95.53385925292969,
+    "tj_p99_riding": 80.4512939453125,
+    "tj_mean_riding": 47.29707336425781,
+    "rise_mean_riding": 21.264150619506836,
+    "riding_hours_tj_above_100": 0.0,
+    "th_max": 85.59210968017578,
+    "riding_hours_th_above_80": 1.0441666666666667,
+    "D_index_base": 0.0014972195918279139,
+    "D_active_base": 0.0009713867255876605,
+    "D_index_n3": 0.010448776291615188,
+    "D_index_n4": 0.0036420879018169623,
+    "D_index_n6": 0.0006484557322200604,
+    "km_per_day": 93.44733898958198,
+    "n_cycles_ge2K": 137212
+   }
+  }
+ },
+ "D_hard_ratio_to_Madrid": {
+  "commuter": {
+   "Karachi": 1.4583208342533829,
+   "Delhi": 1.7708867495336895,
+   "Jakarta": 1.4518707980474188,
+   "Lagos": 1.3421476567313968,
+   "Madrid": 1.0
+  },
+  "delivery": {
+   "Karachi": 1.85883674680699,
+   "Delhi": 2.319009057094247,
+   "Jakarta": 1.6615113594251583,
+   "Lagos": 1.556437161173436,
+   "Madrid": 1.0
+  }
+ }
+}

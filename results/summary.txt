@@ -1,0 +1,85 @@
+WEATHER 2025 (NASA POWER T2M)
+  Karachi  mean 26.34  p99 35.98  max 40.41  hours>35C 173
+  Delhi    mean 24.84  p99 42.54  max 45.86  hours>35C 956
+  Jakarta  mean 27.63  p99 30.92  max 31.95  hours>35C 0
+  Lagos    mean 26.77  p99 30.61  max 32.15  hours>35C 0
+  Madrid   mean 14.45  p99 37.13  max 40.57  hours>35C 212
+A BASE, commuter
+  Karachi  km/day 24.0  Tj max 47.3  Tj p99 41.8  rise mean 6.5  cycles>=2K 20880  D 1.841e-07 (n=3: 1.83e-05)
+  Delhi    km/day 24.0  Tj max 55.4  Tj p99 49.0  rise mean 6.5  cycles>=2K 20889  D 3.435e-07 (n=3: 2.20e-05)
+  Jakarta  km/day 24.0  Tj max 41.4  Tj p99 39.0  rise mean 6.6  cycles>=2K 20675  D 1.195e-07 (n=3: 1.73e-05)
+  Lagos    km/day 24.0  Tj max 42.1  Tj p99 39.0  rise mean 6.5  cycles>=2K 20659  D 1.260e-07 (n=3: 1.66e-05)
+  Madrid   km/day 24.0  Tj max 52.0  Tj p99 45.7  rise mean 6.3  cycles>=2K 20740  D 5.887e-07 (n=3: 1.47e-05)
+B ratio to Madrid over 36 life models, commuter
+  Karachi  base 0.31  min 0.13  max 1.25
+  Delhi    base 0.58  min 0.27  max 1.50
+  Jakarta  base 0.20  min 0.06  max 1.18
+  Lagos    base 0.21  min 0.07  max 1.13
+  Madrid   base 1.00  min 1.00  max 1.00
+  most damaged city by model: Delhi 6, Madrid 30
+B' riding cycles only (rainflow per ride), ratio to Madrid, commuter
+  Karachi  base 2.11  min 1.18  max 2.16
+  Delhi    base 2.40  min 1.18  max 2.58
+  Jakarta  base 2.13  min 1.19  max 2.17
+  Lagos    base 1.97  min 1.18  max 1.97
+  Madrid   base 1.00  min 1.00  max 1.00
+  most damaged city by model: Delhi 28, Jakarta 8
+A BASE, delivery
+  Karachi  km/day 96.2  Tj max 52.5  Tj p99 44.4  rise mean 6.2  cycles>=2K 96360  D 1.019e-06 (n=3: 1.02e-04)
+  Delhi    km/day 96.2  Tj max 58.2  Tj p99 51.2  rise mean 6.2  cycles>=2K 96360  D 1.585e-06 (n=3: 1.22e-04)
+  Jakarta  km/day 96.2  Tj max 43.4  Tj p99 40.1  rise mean 6.2  cycles>=2K 96360  D 7.425e-07 (n=3: 9.27e-05)
+  Lagos    km/day 96.2  Tj max 43.7  Tj p99 39.8  rise mean 6.2  cycles>=2K 96360  D 7.073e-07 (n=3: 8.78e-05)
+  Madrid   km/day 96.2  Tj max 52.6  Tj p99 45.5  rise mean 5.9  cycles>=2K 96360  D 7.835e-07 (n=3: 5.89e-05)
+B ratio to Madrid over 36 life models, delivery
+  Karachi  base 1.30  min 0.74  max 1.74
+  Delhi    base 2.02  min 1.15  max 2.09
+  Jakarta  base 0.95  min 0.45  max 1.57
+  Lagos    base 0.90  min 0.45  max 1.49
+  Madrid   base 1.00  min 1.00  max 1.00
+  most damaged city by model: Delhi 36
+B' riding cycles only (rainflow per ride), ratio to Madrid, delivery
+  Karachi  base 1.86  min 1.15  max 1.87
+  Delhi    base 2.22  min 1.16  max 2.28
+  Jakarta  base 1.71  min 1.14  max 1.77
+  Lagos    base 1.61  min 1.13  max 1.66
+  Madrid   base 1.00  min 1.00  max 1.00
+  most damaged city by model: Delhi 35, Jakarta 1
+C FACTORS, delivery (damage x base, Tj max, Ths max, riding h with Ths>80C)
+  Delhi    base                                          x    1.00  Tj 58.2  Ths 54.1  h>80 0.0
+  Delhi    box to air R_hs 0.5 -> 1.5 K/W (no airflow)   x   17.02  Tj 68.7  Ths 64.5  h>80 0.0
+  Delhi    12 instead of 18 MOSFETs                      x    9.20  Tj 65.0  Ths 56.4  h>80 0.0
+  Delhi    +8 K inside the scooter body                  x    2.12  Tj 66.7  Ths 62.5  h>80 0.0
+  Delhi    pillion / cargo +75 kg                        x    2.81  Tj 61.5  Ths 57.6  h>80 0.0
+  Delhi    slower gate drive (x4 datasheet times)        x    3.90  Tj 62.2  Ths 57.0  h>80 0.0
+  Delhi    R_DS(on) at datasheet max                     x    1.61  Tj 59.6  Ths 55.0  h>80 0.0
+  Delhi    higher current limit 150 A, 4.5 kW            x    5.78  Tj 63.6  Ths 55.1  h>80 0.0
+  Delhi    regen braking (50 %)                          x    1.80  Tj 60.1  Ths 55.9  h>80 0.0
+  Karachi  base                                          x    1.00  Tj 52.5  Ths 48.5  h>80 0.0
+  Karachi  box to air R_hs 0.5 -> 1.5 K/W (no airflow)   x   20.63  Tj 62.6  Ths 58.6  h>80 0.0
+  Karachi  12 instead of 18 MOSFETs                      x   10.86  Tj 59.0  Ths 50.6  h>80 0.0
+  Karachi  +8 K inside the scooter body                  x    2.19  Tj 60.9  Ths 56.8  h>80 0.0
+  Karachi  pillion / cargo +75 kg                        x    3.10  Tj 55.6  Ths 51.8  h>80 0.0
+  Karachi  slower gate drive (x4 datasheet times)        x    4.53  Tj 56.5  Ths 51.3  h>80 0.0
+  Karachi  R_DS(on) at datasheet max                     x    1.69  Tj 53.8  Ths 49.3  h>80 0.0
+  Karachi  higher current limit 150 A, 4.5 kW            x    6.67  Tj 57.6  Ths 49.4  h>80 0.0
+  Karachi  regen braking (50 %)                          x    1.92  Tj 54.3  Ths 50.3  h>80 0.0
+  Madrid   base                                          x    1.00  Tj 52.6  Ths 48.6  h>80 0.0
+  Madrid   box to air R_hs 0.5 -> 1.5 K/W (no airflow)   x   16.07  Tj 62.8  Ths 58.8  h>80 0.0
+  Madrid   12 instead of 18 MOSFETs                      x    8.52  Tj 59.1  Ths 50.8  h>80 0.0
+  Madrid   +8 K inside the scooter body                  x    2.15  Tj 61.1  Ths 56.9  h>80 0.0
+  Madrid   pillion / cargo +75 kg                        x    2.75  Tj 55.8  Ths 52.0  h>80 0.0
+  Madrid   slower gate drive (x4 datasheet times)        x    3.92  Tj 56.6  Ths 51.5  h>80 0.0
+  Madrid   R_DS(on) at datasheet max                     x    1.58  Tj 54.0  Ths 49.5  h>80 0.0
+  Madrid   higher current limit 150 A, 4.5 kW            x    5.44  Tj 57.7  Ths 49.5  h>80 0.0
+  Madrid   regen braking (50 %)                          x    1.79  Tj 54.4  Ths 50.4  h>80 0.0
+D HARD USE {'r_hs': 1.5, 'n_par': 2, 't_offset': 8.0, 'm_extra': 75.0}
+  commuter  Karachi  Tj max 95.3  Ths max 85.3  h Ths>80 0.3  D 8.355e-04 (n=3: 4.76e-03, n=6: 4.13e-04)  ratio 1.46
+  commuter  Delhi    Tj max 106.1  Ths max 95.4  h Ths>80 6.6  D 1.015e-03 (n=3: 5.20e-03, n=6: 5.34e-04)  ratio 1.77
+  commuter  Jakarta  Tj max 87.5  Ths max 78.0  h Ths>80 0.0  D 8.318e-04 (n=3: 4.95e-03, n=6: 4.00e-04)  ratio 1.45
+  commuter  Lagos    Tj max 88.4  Ths max 78.8  h Ths>80 0.0  D 7.689e-04 (n=3: 4.58e-03, n=6: 3.70e-04)  ratio 1.34
+  commuter  Madrid   Tj max 101.5  Ths max 91.1  h Ths>80 2.3  D 5.729e-04 (n=3: 2.52e-03, n=6: 3.32e-04)  ratio 1.00
+  delivery  Karachi  Tj max 95.4  Ths max 85.4  h Ths>80 0.5  D 2.783e-03 (n=3: 1.94e-02, n=6: 1.19e-03)  ratio 1.86
+  delivery  Delhi    Tj max 102.7  Ths max 92.3  h Ths>80 13.5  D 3.472e-03 (n=3: 2.26e-02, n=6: 1.55e-03)  ratio 2.32
+  delivery  Jakarta  Tj max 84.0  Ths max 74.7  h Ths>80 0.0  D 2.488e-03 (n=3: 1.80e-02, n=6: 1.04e-03)  ratio 1.66
+  delivery  Lagos    Tj max 84.3  Ths max 75.0  h Ths>80 0.0  D 2.330e-03 (n=3: 1.70e-02, n=6: 9.72e-04)  ratio 1.56
+  delivery  Madrid   Tj max 95.5  Ths max 85.6  h Ths>80 1.0  D 1.497e-03 (n=3: 1.04e-02, n=6: 6.48e-04)  ratio 1.00
